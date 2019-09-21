@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>Facelet Title</title>
+    </h:head>
+    <h:body>
+        <h1>Reciclador Cadastrado</h1>
+        <hr />
+        Nome Empresa: <h:outputText value="#{recicladorBean.nomeEmpresa}" /><br/>
+        Endereço: <h:outputText value="#{recicladorBean.endereco}" /><br/>
+        Numero <h:outputText value="#{recicladorBean.numeroCasa}" /><br/>
+        Telefone: <h:outputText value="#{recicladorBean.telefone}" /><br/>
+        e-Mail: <h:outputLink value="mailto:#{recicladorBean.email}">
+            <h:outputText value="#{recicladorBean.email}" />
+        </h:outputLink><br/>
+        Senha: <h:outputText value="#{recicladorBean.senha}"/><br/>
+        <hr/>
+        <h:form>
+            <h:commandLink action="inicio" value='Início' />
+        </h:form>
+    </h:body>
+</html>
+
